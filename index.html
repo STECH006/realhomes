@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Homes</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="Image/white-logo.png" alt="RealHomes Logo">
+        </div>
+
+        <nav class="nav-container" id="navMenu">
+            <ul class="nav-links">
+                <li><a href="#" class="nav-item active">Home</a></li>
+                <li><a href="#" class="nav-item">Become a Host</a></li>
+                <li><a href="#" class="nav-item">Properties</a></li>
+                <li><a href="#" class="nav-item">Property</a></li>
+                <li><a href="#" class="nav-item">Blog</a></li>
+                <li><a href="#" class="nav-item">Others</a></li>
+                <li><a href="#" class="nav-item">Contact</a></li>
+            </ul>
+
+            <div class="mobile-actions">
+                <a href="tel:18005551234" class="phone-link">
+                    <i class="fa-solid fa-phone"></i> 1-800-555-1234
+                </a>
+                <button class="submit-btn">Submit</button>
+            </div>
+        </nav>
+
+        <div class="nav-actions">
+            <a href="tel:18005551234" class="phone-link desktop-only">
+                <i class="fa-solid fa-phone"></i> 1-800-555-1234
+            </a>
+            <button class="user-btn" aria-label="User Account">
+                <i class="fa-regular fa-circle-user"></i>
+            </button>
+            <button class="submit-btn desktop-only">Submit</button>
+
+            <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle Navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+                <h1 class="hero-title">The Most Relaxing Vacation Places</h1>
+                <p class="hero-subtitle">A vacation is having nothing to do and all day to do it in.</p>
+
+                <div class="search-container">
+                    <form class="search-form" id="searchForm">
+
+                        <div class="search-fields">
+                            <div class="input-group location-group">
+                                <i class="fa-solid fa-location-dot location-icon"></i>
+                                <input type="text" placeholder="Location Address" required>
+                            </div>
+
+                            <div class="input-group">
+                                <input type="text" placeholder="Check In" onfocus="(this.type='date')"
+                                    onblur="if(!this.value)this.type='text'">
+                            </div>
+
+                            <div class="input-group">
+                                <input type="text" placeholder="Check Out" onfocus="(this.type='date')"
+                                    onblur="if(!this.value)this.type='text'">
+                            </div>
+
+                            <div class="input-group select-group">
+                                <select>
+                                    <option value="" disabled selected>Guests</option>
+                                    <option value="1">1 Guest</option>
+                                    <option value="2">2 Guests</option>
+                                    <option value="3">3+ Guests</option>
+                                </select>
+                                <i class="fa-solid fa-caret-down dropdown-arrow"></i>
+                            </div>
+                        </div>
+
+                        <div class="search-actions">
+                            <button type="button" class="btn-icon" aria-label="Advanced Search">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            </button>
+                            <button type="submit" class="btn-search">
+                                <i class="fa-solid fa-magnifying-glass"></i> Search
+                            </button>
+                        </div>
+
+                    </form>
+
+                    <div class="slider-container">
+                        <label for="radiusRange">Radius: <strong id="radiusValue">23 miles</strong></label>
+                        <input type="range" id="radiusRange" min="1" max="100" value="23">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="rentals-section">
+            <div class="container">
+
+                <div class="section-title-wrap">
+                    <span class="sub-heading">Explore Our</span>
+                    <h2 class="main-heading">Featured Rentals</h2>
+                    <p class="description">Carefully chosen to deliver you quality experience.</p>
+                </div>
+
+                <div class="rentals-grid">
+
+                    <article class="rental-card">
+                        <div class="card-thumb">
+                            <img src="Image/apartment-11-488x326.jpg" alt="A Grand Modern Apartment" class="thumb-img">
+
+                            <div class="badge-top-left">
+                                <span class="badge red-badge"><i class="fa-solid fa-camera"></i> 7</span>
+                                <span class="badge red-badge"><i class="fa-solid fa-video"></i> 1</span>
+                            </div>
+                            <div class="badge-top-right">
+                                <span class="badge ribbon-badge"><i class="fa-solid fa-star"></i></span>
+                            </div>
+
+                            <div class="owner-tag">
+                                <img src="Image/sophia-sebastian.jpg" alt="Sophia Sebastian" class="owner-avatar">
+                                <div class="owner-meta">
+                                    <span class="owner-title">Owner</span>
+                                    <strong class="owner-name">Sophia Sebastian</strong>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-body">
+                            <h3 class="property-name"><a href="#">A Grand Modern Apartment</a></h3>
+                            <p class="property-location">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <a href="#">Chicago, Illinois, United States of America</a>
+                            </p>
+
+                            <div class="star-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+
+                            <p class="added-date">Added: <span>January 8, 2024</span></p>
+
+                            <div class="spec-grid">
+                                <div class="spec-item">
+                                    <span class="spec-label">Bedrooms</span>
+                                    <div class="spec-data"><i class="fa-solid fa-bed"></i> <strong>2</strong></div>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Bathrooms</span>
+                                    <div class="spec-data"><i class="fa-solid fa-shower"></i> <strong>2</strong></div>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Guests</span>
+                                    <div class="spec-data"><i class="fa-solid fa-users"></i> <strong>6</strong></div>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Area</span>
+                                    <div class="spec-data"><i class="fa-regular fa-square"></i> <strong>2630</strong> sq
+                                        ft</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-footer">
+                            <span class="price-tag"><strong>$189</strong> Per Night</span>
+                            <div class="card-actions">
+                                <button class="action-btn" title="Add to Favorite"><i
+                                        class="fa-solid fa-heart"></i></button>
+                                <button class="action-btn" title="Compare"><i
+                                        class="fa-solid fa-right-left"></i></button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="rental-card">
+                        <div class="card-thumb">
+                            <img src="Image/apartment-10-488x326.jpg" alt="Creative Modern Apartment" class="thumb-img">
+
+                            <div class="badge-top-left">
+                                <span class="badge red-badge"><i class="fa-solid fa-camera"></i> 3</span>
+                                <span class="badge red-badge"><i class="fa-solid fa-video"></i> 1</span>
+                            </div>
+                            <div class="badge-top-right">
+                                <span class="badge ribbon-badge"><i class="fa-solid fa-star"></i></span>
+                            </div>
+
+                            <div class="owner-tag">
+                                <img src="Image/avery-jacob.jpg" alt="Avery Jacob" class="owner-avatar">
+                                <div class="owner-meta">
+                                    <span class="owner-title">Owner</span>
+                                    <strong class="owner-name">Avery Jacob</strong>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-body">
+                            <h3 class="property-name"><a href="#">Creative Modern Apartment</a></h3>
+                            <p class="property-location">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <a href="#">Chicago, Illinois, United States of America</a>
+                            </p>
+
+                            <div class="star-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+
+                            <p class="added-date">Added: <span>January 8, 2024</span></p>
+
+                            <div class="spec-grid">
+                                <div class="spec-item">
+                                    <span class="spec-label">Bedrooms</span>
+                                    <div class="spec-data"><i class="fa-solid fa-bed"></i> <strong>2</strong></div>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Bathrooms</span>
+                                    <div class="spec-data"><i class="fa-solid fa-shower"></i> <strong>2</strong></div>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Guests</span>
+                                    <div class="spec-data"><i class="fa-solid fa-users"></i> <strong>5</strong></div>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Area</span>
+                                    <div class="spec-data"><i class="fa-regular fa-square"></i> <strong>2340</strong> sq
+                                        ft</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-footer">
+                            <span class="price-tag"><strong>$129</strong> Per Night</span>
+                            <div class="card-actions">
+                                <button class="action-btn" title="Add to Favorite"><i
+                                        class="fa-solid fa-heart"></i></button>
+                                <button class="action-btn" title="Compare"><i
+                                        class="fa-solid fa-right-left"></i></button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="rental-card">
+                        <div class="card-thumb">
+                            <img src="Image/apartment-09-488x326.jpg" alt="Modern and Luxury Apartment"
+                                class="thumb-img">
+
+                            <div class="badge-top-left">
+                                <span class="badge red-badge"><i class="fa-solid fa-camera"></i> 7</span>
+                                <span class="badge red-badge"><i class="fa-solid fa-video"></i> 1</span>
+                            </div>
+                            <div class="badge-top-right">
+                                <span class="badge ribbon-badge"><i class="fa-solid fa-star"></i></span>
+                            </div>
+
+                            <div class="owner-tag">
+                                <img src="Image/avery-jacob.jpg" alt="Avery Jacob" class="owner-avatar">
+                                <div class="owner-meta">
+                                    <span class="owner-title">Owner</span>
+                                    <strong class="owner-name">Avery Jacob</strong>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-body">
+                            <h3 class="property-name"><a href="#">Modern and Luxury Apartment</a></h3>
+                            <p class="property-location">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <a href="#">Chicago, Illinois, United States of America</a>
+                            </p>
+
+                            <div class="star-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+
+                            <p class="added-date">Added: <span>January 8, 2024</span></p>
+
+                            <div class="spec-grid">
+                                <div class="spec-item">
+                                    <span class="spec-label">Bedrooms</span>
+                                    <div class="spec-data"><i class="fa-solid fa-bed"></i> <strong>2</strong></div>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Bathrooms</span>
+                                    <div class="spec-data"><i class="fa-solid fa-shower"></i> <strong>2</strong></div>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Guests</span>
+                                    <div class="spec-data"><i class="fa-solid fa-users"></i> <strong>5</strong></div>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Area</span>
+                                    <div class="spec-data"><i class="fa-regular fa-square"></i> <strong>2460</strong> sq
+                                        ft</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-footer">
+                            <span class="price-tag"><strong>$149</strong> Per Night</span>
+                            <div class="card-actions">
+                                <button class="action-btn" title="Add to Favorite"><i
+                                        class="fa-solid fa-heart"></i></button>
+                                <button class="action-btn" title="Compare"><i
+                                        class="fa-solid fa-right-left"></i></button>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+                <div class="pagination">
+                    <button class="page-btn active">1</button>
+                    <button class="page-btn">2</button>
+                    <button class="page-btn">3</button>
+                    <button class="page-btn">4</button>
+                    <button class="page-btn text-btn">Next</button>
+                    <button class="page-btn text-btn">Last</button>
+                </div>
+
+            </div>
+
+            <button id="scrollToTopBtn" class="scroll-top-btn" title="Back to top">
+                <i class="fa-solid fa-chevron-up"></i>
+            </button>
+        </section>
+
+        <section class="destinations-section">
+            <div class="destinations-grid">
+
+                <a href="#" class="city-card card-san-francisco">
+                    <img src="Image/san-francisco-final-1024x576.jpg" alt="San Francisco" class="city-img">
+                    <div class="city-overlay"></div>
+                    <div class="city-content">
+                        <h3 class="city-name">San Francisco</h3>
+                        <div class="property-count">
+                            <span class="count-num">5</span>
+                            <span class="count-label">Properties</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="city-card card-miami">
+                    <img src="Image/miami-final.jpg" alt="Miami" class="city-img">
+                    <div class="city-overlay"></div>
+                    <div class="city-content">
+                        <h3 class="city-name">Miami</h3>
+                        <div class="property-count">
+                            <span class="count-num">6</span>
+                            <span class="count-label">Properties</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="city-card card-orlando">
+                    <img src="Image/orlando-final.jpg" alt="Orlando" class="city-img">
+                    <div class="city-overlay"></div>
+                    <div class="city-content">
+                        <h3 class="city-name">Orlando</h3>
+                        <div class="property-count">
+                            <span class="count-num">6</span>
+                            <span class="count-label">Properties</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="city-card card-new-york">
+                    <img src="Image/new-york-final.jpg" alt="New York" class="city-img">
+                    <div class="city-overlay"></div>
+                    <div class="city-content">
+                        <h3 class="city-name">New York</h3>
+                        <div class="property-count">
+                            <span class="count-num">6</span>
+                            <span class="count-label">Properties</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="city-card card-los-angeles">
+                    <img src="Image/los-angeles-final-1024x576.jpg" alt="Los Angeles" class="city-img">
+                    <div class="city-overlay"></div>
+                    <div class="city-content">
+                        <h3 class="city-name">Los Angeles</h3>
+                        <div class="property-count">
+                            <span class="count-num">4</span>
+                            <span class="count-label">Properties</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="city-card card-chicago">
+                    <img src="Image/chicago-final-1024x576.jpg" alt="Chicago" class="city-img">
+                    <div class="city-overlay"></div>
+                    <div class="city-content">
+                        <h3 class="city-name">Chicago</h3>
+                        <div class="property-count">
+                            <span class="count-num">4</span>
+                            <span class="count-label">Properties</span>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+        <section class="latest-rentals-section">
+            <div class="rentals-container">
+
+                <div class="rentals-heading-wrap">
+                    <span class="sub-label">Also Explore</span>
+                    <h2 class="main-title">Latest Rentals</h2>
+                    <p class="sub-description">For a refreshing experience.</p>
+                </div>
+
+                <div class="cards-grid">
+
+                    <article class="property-card">
+                        <div class="thumb-wrapper">
+                            <img src="Image/apartment-11-488x326.jpg" alt="A Grand Modern Apartment"
+                                class="property-img">
+                            <div class="top-media-badges">
+                                <span class="media-badge red-badge"><i class="fa-solid fa-camera"></i> 7</span>
+                                <span class="media-badge red-badge"><i class="fa-solid fa-video"></i> 1</span>
+                            </div>
+                            <span class="bookmark-ribbon"><i class="fa-solid fa-star"></i></span>
+                            <span class="category-tag">Apartment</span>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="title"><a href="#">A Grand Modern Apartment</a></h3>
+                            <p class="location"><i class="fa-solid fa-location-dot"></i> <a href="#">Chicago, Illinois,
+                                    United States of America</a></p>
+                            <div class="star-rating full">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="added-info">Added: <span>January 8, 2024</span></p>
+
+                            <div class="spec-grid">
+                                <div class="spec-item">
+                                    <span class="spec-label">Bedrooms</span>
+                                    <div class="spec-data"><i class="fa-solid fa-bed"></i> <strong>2</strong></div>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Bathrooms</span>
+                                    <div class="spec-data"><i class="fa-solid fa-shower"></i> <strong>2</strong></div>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Guests</span>
+                                    <div class="spec-data"><i class="fa-solid fa-users"></i> <strong>5</strong></div>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Area</span>
+                                    <div class="spec-data"><i class="fa-regular fa-square"></i> <strong>2460</strong> sq
+                                        ft</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="price-row">
+                            <span class="price"><strong>$189</strong> Per Night</span>
+                            <div class="actions">
+                                <button class="action-icon" aria-label="Favorite"><i
+                                        class="fa-solid fa-heart"></i></button>
+                                <button class="action-icon" aria-label="Compare"><i
+                                        class="fa-solid fa-right-left"></i></button>
+                            </div>
+                        </div>
+                        <div class="owner-footer">
+                            <img src="Image/sophia-sebastian.jpg" alt="Sophia Sebastian" class="owner-pic">
+                            <div class="owner-details">
+                                <span class="role">Owner</span>
+                                <strong class="name">Sophia Sebastian</strong>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="property-card">
+                        <div class="thumb-wrapper">
+                            <img src="Image/apartment-10-488x326.jpg" alt="Creative Modern Apartment"
+                                class="property-img">
+                            <div class="top-media-badges">
+                                <span class="media-badge red-badge"><i class="fa-solid fa-camera"></i> 3</span>
+                                <span class="media-badge red-badge"><i class="fa-solid fa-video"></i> 1</span>
+                            </div>
+                            <span class="bookmark-ribbon"><i class="fa-solid fa-star"></i></span>
+                            <span class="category-tag">Apartment</span>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="title"><a href="#">Creative Modern Apartment</a></h3>
+                            <p class="location"><i class="fa-solid fa-location-dot"></i> <a href="#">Chicago, Illinois,
+                                    United States of America</a></p>
+                            <div class="star-rating full">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="added-info">Added: <span>January 8, 2024</span></p>
+
+                            <div class="spec-grid">
+                                <div class="spec-item">
+                                    <span class="spec-label">Bedrooms</span>
+                                    <div class="spec-data"><i class="fa-solid fa-bed"></i> <strong>2</strong></div>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Bathrooms</span>
+                                    <div class="spec-data"><i class="fa-solid fa-shower"></i> <strong>2</strong></div>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Guests</span>
+                                    <div class="spec-data"><i class="fa-solid fa-users"></i> <strong>5</strong></div>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Area</span>
+                                    <div class="spec-data"><i class="fa-regular fa-square"></i> <strong>2460</strong> sq
+                                        ft</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="price-row">
+                            <span class="price"><strong>$129</strong> Per Night</span>
+                            <div class="actions">
+                                <button class="action-icon" aria-label="Favorite"><i
+                                        class="fa-solid fa-heart"></i></button>
+                                <button class="action-icon" aria-label="Compare"><i
+                                        class="fa-solid fa-right-left"></i></button>
+                            </div>
+                        </div>
+                        <div class="owner-footer">
+                            <img src="Image/avery-jacob.jpg" alt="Avery Jacob" class="owner-pic">
+                            <div class="owner-details">
+                                <span class="role">Owner</span>
+                                <strong class="name">Avery Jacob</strong>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="property-card">
+                        <div class="thumb-wrapper">
+                            <img src="Image/apartment-09-488x326.jpg" alt="Modern and Luxury Apartment"
+                                class="property-img">
+                            <div class="top-media-badges">
+                                <span class="media-badge red-badge"><i class="fa-solid fa-camera"></i> 7</span>
+                                <span class="media-badge red-badge"><i class="fa-solid fa-video"></i> 1</span>
+                            </div>
+                            <span class="bookmark-ribbon"><i class="fa-solid fa-star"></i></span>
+                            <span class="category-tag">Apartment</span>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="title"><a href="#">Modern and Luxury Apartment</a></h3>
+                            <p class="location"><i class="fa-solid fa-location-dot"></i> <a href="#">Chicago, Illinois,
+                                    United States of America</a></p>
+                            <div class="star-rating full">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="added-info">Added: <span>January 8, 2024</span></p>
+
+                            <div class="spec-grid">
+                                <div class="spec-item">
+                                    <span class="spec-label">Bedrooms</span>
+                                    <div class="spec-data"><i class="fa-solid fa-bed"></i> <strong>2</strong></div>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Bathrooms</span>
+                                    <div class="spec-data"><i class="fa-solid fa-shower"></i> <strong>2</strong></div>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Guests</span>
+                                    <div class="spec-data"><i class="fa-solid fa-users"></i> <strong>5</strong></div>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Area</span>
+                                    <div class="spec-data"><i class="fa-regular fa-square"></i> <strong>2460</strong> sq
+                                        ft</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="price-row">
+                            <span class="price"><strong>$149</strong> Per Night</span>
+                            <div class="actions">
+                                <button class="action-icon" aria-label="Favorite"><i
+                                        class="fa-solid fa-heart"></i></button>
+                                <button class="action-icon" aria-label="Compare"><i
+                                        class="fa-solid fa-right-left"></i></button>
+                            </div>
+                        </div>
+                        <div class="owner-footer">
+                            <img src="Image/avery-jacob.jpg" alt="Avery Jacob" class="owner-pic">
+                            <div class="owner-details">
+                                <span class="role">Owner</span>
+                                <strong class="name">Avery Jacob</strong>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="property-card">
+                        <div class="thumb-wrapper">
+                            <img src="Image/apartment-08-488x326.jpg" alt="Classy and Comfortable Apartment"
+                                class="property-img">
+                            <div class="top-media-badges">
+                                <span class="media-badge red-badge"><i class="fa-solid fa-camera"></i> 4</span>
+                                <span class="media-badge red-badge"><i class="fa-solid fa-video"></i> 1</span>
+                            </div>
+                            <span class="bookmark-ribbon"><i class="fa-solid fa-star"></i></span>
+                            <span class="category-tag">Apartment</span>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="title"><a href="#">Classy and Comfortable Apartment</a></h3>
+                            <p class="location"><i class="fa-solid fa-location-dot"></i> <a href="#">Chicago, Illinois,
+                                    United States of America</a></p>
+                            <div class="star-rating full">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="added-info">Added: <span>January 8, 2024</span></p>
+
+                            <div class="spec-grid">
+                                <div class="spec-item">
+                                    <span class="spec-label">Bedrooms</span>
+                                    <div class="spec-data"><i class="fa-solid fa-bed"></i> <strong>2</strong></div>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Bathrooms</span>
+                                    <div class="spec-data"><i class="fa-solid fa-shower"></i> <strong>2</strong></div>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Guests</span>
+                                    <div class="spec-data"><i class="fa-solid fa-users"></i> <strong>5</strong></div>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Area</span>
+                                    <div class="spec-data"><i class="fa-regular fa-square"></i> <strong>2460</strong> sq
+                                        ft</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="price-row">
+                            <span class="price"><strong>$129</strong> Per Night</span>
+                            <div class="actions">
+                                <button class="action-icon" aria-label="Favorite"><i
+                                        class="fa-solid fa-heart"></i></button>
+                                <button class="action-icon" aria-label="Compare"><i
+                                        class="fa-solid fa-right-left"></i></button>
+                            </div>
+                        </div>
+                        <div class="owner-footer">
+                            <img src="Image/asher-cameron.jpg" alt="Asher Cameron" class="owner-pic">
+                            <div class="owner-details">
+                                <span class="role">Owner</span>
+                                <strong class="name">Asher Cameron</strong>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="property-card">
+                        <div class="thumb-wrapper">
+                            <img src="Image/studio-apartment-04-488x326.jpg" alt="Comfortable Studio Apartment"
+                                class="property-img">
+                            <div class="top-media-badges">
+                                <span class="media-badge red-badge"><i class="fa-solid fa-camera"></i> 1</span>
+                            </div>
+                            <span class="bookmark-ribbon"><i class="fa-solid fa-star"></i></span>
+                            <span class="category-tag">Studio Apartment</span>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="title"><a href="#">Comfortable Studio Apartment</a></h3>
+                            <p class="location"><i class="fa-solid fa-location-dot"></i> <a href="#">San Francisco,
+                                    California, United States of America</a></p>
+                            <p class="added-info studio-margin">Added: <span>January 8, 2024</span></p>
+
+                            <div class="spec-grid">
+                                <div class="spec-item">
+                                    <span class="spec-label">Bedrooms</span>
+                                    <div class="spec-data"><i class="fa-solid fa-bed"></i> <strong>2</strong></div>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Bathrooms</span>
+                                    <div class="spec-data"><i class="fa-solid fa-shower"></i> <strong>2</strong></div>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Guests</span>
+                                    <div class="spec-data"><i class="fa-solid fa-users"></i> <strong>5</strong></div>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Area</span>
+                                    <div class="spec-data"><i class="fa-regular fa-square"></i> <strong>2460</strong> sq
+                                        ft</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="price-row">
+                            <span class="price"><strong>$119</strong> Per Night</span>
+                            <div class="actions">
+                                <button class="action-icon" aria-label="Favorite"><i
+                                        class="fa-solid fa-heart"></i></button>
+                                <button class="action-icon" aria-label="Compare"><i
+                                        class="fa-solid fa-right-left"></i></button>
+                            </div>
+                        </div>
+                        <div class="owner-footer">
+                            <img src="Image/olivia-ryan.jpg" alt="Olivia Ryan" class="owner-pic">
+                            <div class="owner-details">
+                                <span class="role">Owner</span>
+                                <strong class="name">Olivia Ryan</strong>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="property-card">
+                        <div class="thumb-wrapper">
+                            <img src="Image/apartment-07-488x326.jpg" alt="Comfortable Roomy Apartment"
+                                class="property-img">
+                            <div class="top-media-badges">
+                                <span class="media-badge red-badge"><i class="fa-solid fa-camera"></i> 8</span>
+                                <span class="media-badge red-badge"><i class="fa-solid fa-video"></i> 1</span>
+                            </div>
+                            <span class="bookmark-ribbon"><i class="fa-solid fa-star"></i></span>
+                            <span class="category-tag">Apartment</span>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="title"><a href="#">Comfortable Roomy Apartment</a></h3>
+                            <p class="location"><i class="fa-solid fa-location-dot"></i> <a href="#">San Francisco,
+                                    California, United States</a></p>
+                            <div class="star-rating four-star">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-regular fa-star"></i>
+                            </div>
+                            <p class="added-info">Added: <span>January 8, 2024</span></p>
+
+                            <div class="spec-grid">
+                                <div class="spec-item">
+                                    <span class="spec-label">Bedrooms</span>
+                                    <div class="spec-data"><i class="fa-solid fa-bed"></i> <strong>2</strong></div>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Bathrooms</span>
+                                    <div class="spec-data"><i class="fa-solid fa-shower"></i> <strong>2</strong></div>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Guests</span>
+                                    <div class="spec-data"><i class="fa-solid fa-users"></i> <strong>5</strong></div>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Area</span>
+                                    <div class="spec-data"><i class="fa-regular fa-square"></i> <strong>2460</strong> sq
+                                        ft</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="price-row">
+                            <span class="price"><strong>$139</strong> Per Night</span>
+                            <div class="actions">
+                                <button class="action-icon" aria-label="Favorite"><i
+                                        class="fa-solid fa-heart"></i></button>
+                                <button class="action-icon" aria-label="Compare"><i
+                                        class="fa-solid fa-right-left"></i></button>
+                            </div>
+                        </div>
+                        <div class="owner-footer">
+                            <img src="Image/connor-colton.jpg" alt="Connor Colton" class="owner-pic">
+                            <div class="owner-details">
+                                <span class="role">Owner</span>
+                                <strong class="name">Connor Colton</strong>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+                <div class="pagination">
+                    <a href="#" class="page-num active">1</a>
+                    <a href="#" class="page-num">2</a>
+                    <a href="#" class="page-num">3</a>
+                    <a href="#" class="page-num">4</a>
+                    <a href="#" class="page-num">5</a>
+                    <a href="#" class="page-num">6</a>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="cta-banner-section">
+            <div class="cta-bg-image"></div>
+            <div class="cta-overlay"></div>
+
+            <div class="cta-container">
+                <div class="cta-content">
+                    <h2 class="cta-title">
+                        Find Great Places to Stay at Your Favorite Destinations
+                    </h2>
+                    <p class="cta-description">
+                        Our rentals offer comfort with world class facilities to travellers around the globe. Explore
+                        best place to stay around your favorite destination and get great deals.
+                    </p>
+                    <a href="#" class="cta-btn">Explore Rentals</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="news-section">
+            <div class="news-container">
+
+                <div class="news-header">
+                    <span class="news-subtitle">Check out recent</span>
+                    <h2 class="news-title">News & Updates</h2>
+                    <p class="news-desc">From real estate industry and beyond.</p>
+                </div>
+
+                <div class="news-grid">
+
+                    <article class="news-card">
+                        <div class="news-thumb">
+                            <a href="#">
+                                <img src="Image/scenic-getaways-488x326.jpg" alt="The Most Scenic Getaways"
+                                    class="news-img">
+                            </a>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <span class="meta-date">January 8, 2024</span> In <a href="#"
+                                    class="meta-category">Traveler Tips</a>
+                            </div>
+                            <h3 class="post-title">
+                                <a href="#">The Most Scenic Getaways</a>
+                            </h3>
+                            <p class="post-excerpt">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor...
+                            </p>
+                            <div class="post-author">
+                                By <a href="#">John Doe</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="news-card">
+                        <div class="news-thumb">
+                            <a href="#">
+                                <img src="Image/rental-income-488x326.jpg" alt="How to Earn through Vacation Rentals"
+                                    class="news-img">
+                            </a>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <span class="meta-date">January 8, 2024</span> In <a href="#"
+                                    class="meta-category">Owner Guides</a>
+                            </div>
+                            <h3 class="post-title">
+                                <a href="#">How to Earn through Vacation Rentals</a>
+                            </h3>
+                            <p class="post-excerpt">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor...
+                            </p>
+                            <div class="post-author">
+                                By <a href="#">John Doe</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="news-card">
+                        <div class="news-thumb">
+                            <a href="#">
+                                <img src="Image/guest-house-488x326.jpg" alt="Preparing Your Property for Rental"
+                                    class="news-img">
+                            </a>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <span class="meta-date">January 8, 2024</span> In <a href="#"
+                                    class="meta-category">Owner Guides</a>
+                            </div>
+                            <h3 class="post-title">
+                                <a href="#">Preparing Your Property for Rental</a>
+                            </h3>
+                            <p class="post-excerpt">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor...
+                            </p>
+                            <div class="post-author">
+                                By <a href="#">John Doe</a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="testimonials-section">
+            <div class="testimonials-container">
+
+                <div class="testimonials-header">
+                    <span class="testimonials-sub">What Our</span>
+                    <h2 class="testimonials-title">Hosts</h2>
+                    <p class="testimonials-desc">Are saying about their experience of RealHomes.</p>
+                </div>
+
+                <input type="radio" name="slide-radio" id="slide-1" class="slider-radio" checked>
+                <input type="radio" name="slide-radio" id="slide-2" class="slider-radio">
+
+                <div class="slider-viewport">
+                    <div class="slider-track">
+
+                        <div class="slide-group">
+
+                            <div class="testimonial-card">
+                                <div class="quote-bubble">
+                                    <p class="quote-text">
+                                        I feel that when you take the responsibility to host something, it is your job
+                                        to make sure that all your guests are taken care of equally. RealHomes helps me
+                                        do my job to the level I wished.
+                                    </p>
+                                    <div class="star-rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="author-info">
+                                    <img src="Image/avery-jacob.jpg" alt="Jackson James" class="author-avatar">
+                                    <div class="author-meta">
+                                        <h4 class="author-name">Jackson James</h4>
+                                        <span class="author-role">Host</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="testimonial-card">
+                                <div class="quote-bubble">
+                                    <p class="quote-text">
+                                        As a child, I loved spending time in one vacation spot, getting attached to the
+                                        location, becoming comfortable, and feeling as though I were at home. This is
+                                        something I would like for my guests to experience.
+                                    </p>
+                                    <div class="star-rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="author-info">
+                                    <img src="Image/connor-colton.jpg" alt="Sophia Sebastian" class="author-avatar">
+                                    <div class="author-meta">
+                                        <h4 class="author-name">Sophia Sebastian</h4>
+                                        <span class="author-role">Host</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="testimonial-card">
+                                <div class="quote-bubble">
+                                    <p class="quote-text">
+                                        Thanks to RealHomes. We see our customers as invited guests to a party and us as
+                                        hosts. It's our job every day to make every important aspect of the customer
+                                        experience a little bit better.
+                                    </p>
+                                    <div class="star-rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="author-info">
+                                    <img src="Image/sophia-sebastian.jpg" alt="Connor Colton" class="author-avatar">
+                                    <div class="author-meta">
+                                        <h4 class="author-name">Connor Colton</h4>
+                                        <span class="author-role">Host</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slide-group">
+
+                            <div class="testimonial-card">
+                                <div class="quote-bubble">
+                                    <p class="quote-text">
+                                        Listing my cabin on RealHomes was the smoothest onboarding process I've
+                                        encountered. The calendar syncing and guest screening eliminate almost all the
+                                        regular headaches of hosting.
+                                    </p>
+                                    <div class="star-rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="author-info">
+                                    <img src="Image/sophia-sebastian.jpg" alt="Lucas Miller" class="author-avatar">
+                                    <div class="author-meta">
+                                        <h4 class="author-name">Lucas Miller</h4>
+                                        <span class="author-role">Host</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="testimonial-card">
+                                <div class="quote-bubble">
+                                    <p class="quote-text">
+                                        The payout predictability and direct communication lines give me complete
+                                        confidence. It feels more like a dedicated team supporting me than just a
+                                        platform software.
+                                    </p>
+                                    <div class="star-rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="author-info">
+                                    <img src="Image/asher-cameron.jpg" alt="Elena Rostova" class="author-avatar">
+                                    <div class="author-meta">
+                                        <h4 class="author-name">Elena Rostova</h4>
+                                        <span class="author-role">Host</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="testimonial-card">
+                                <div class="quote-bubble">
+                                    <p class="quote-text">
+                                        RealHomes has helped me turn a single extra room into a thriving passive income
+                                        stream. The traveler community here is respectful, warm, and easy to communicate
+                                        with.
+                                    </p>
+                                    <div class="star-rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="author-info">
+                                    <img src="Image/olivia-ryan.jpg" alt="David Vance" class="author-avatar">
+                                    <div class="author-meta">
+                                        <h4 class="author-name">David Vance</h4>
+                                        <span class="author-role">Host</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="slider-dots">
+                    <label for="slide-1" class="dot-btn dot-1" aria-label="Go to Slide 1"></label>
+                    <label for="slide-2" class="dot-btn dot-2" aria-label="Go to Slide 2"></label>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="partners-section">
+            <div class="partners-container">
+
+                <div class="partners-header">
+                    <span class="partners-sub">Meet Our</span>
+                    <h2 class="partners-title">Partners</h2>
+                    <p class="partners-desc">We honoured to have these amazing partners.</p>
+                </div>
+
+                <div class="partners-row">
+
+                    <a href="#" class="partner-item" title="TravelWorld">
+                        <img src="Image/partner-01-1.png" alt="">
+                    </a>
+
+                    <a href="#" class="partner-item" title="Fortland Tourism">
+                        <img src="Image/partner-02-1.png" alt="">
+                    </a>
+
+                    <a href="#" class="partner-item" title="Sunshine Travel & Tourism">
+                        <img src="Image/partner-03-1.png" alt="">
+                    </a>
+
+                    <a href="#" class="partner-item" title="New Horizon">
+                        <img src="Image/partner-04-1.png" alt="">
+                    </a>
+
+                    <a href="#" class="partner-item" title="Wonder World">
+                        <img src="Image/partner-05-1.png" alt="">
+                    </a>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+
+            <div class="footer-brand-row">
+                <div class="footer-logo">
+                    <img src="Image/white-logo-retina.png" alt="white-logo-retina">
+                </div>
+                <span class="brand-divider">/</span>
+                <p class="brand-tagline">Simply #1 Vacation Rentals Solution</p>
+            </div>
+
+            <div class="footer-columns">
+
+                <div class="footer-col">
+                    <h4 class="col-title">Get in Touch</h4>
+                    <ul class="contact-list">
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>3015 Grand Ave, Merrick Way, FL</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="tel:+18005551234">+1-800-555-1234</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="mailto:example@example.com">example@example.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-col quick-links-col">
+                    <h4 class="col-title">Quick Links</h4>
+                    <div class="links-grid">
+                        <ul class="links-list">
+                            <li><a href="#"><i class="fa-solid fa-caret-right"></i> Become a Host</a></li>
+                            <li><a href="#"><i class="fa-solid fa-caret-right"></i> Half Map Layout</a></li>
+                            <li><a href="#"><i class="fa-solid fa-caret-right"></i> Contact</a></li>
+                        </ul>
+                        <ul class="links-list">
+                            <li><a href="#"><i class="fa-solid fa-caret-right"></i> Grid Layout</a></li>
+                            <li><a href="#"><i class="fa-solid fa-caret-right"></i> Blog</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="col-title">Amenities</h4>
+                    <div class="amenities-tags">
+                        <a href="#" class="amenity-tag">Air Conditioning</a>
+                        <a href="#" class="amenity-tag">Cable TV</a>
+                        <a href="#" class="amenity-tag">Coffee Maker</a>
+                        <a href="#" class="amenity-tag">Dryer</a>
+                        <a href="#" class="amenity-tag">Elevator</a>
+                        <a href="#" class="amenity-tag">Free Parking</a>
+                        <a href="#" class="amenity-tag">Heating</a>
+                        <a href="#" class="amenity-tag">Hot Water</a>
+                        <a href="#" class="amenity-tag">Iron</a>
+                        <a href="#" class="amenity-tag">Kitchen</a>
+                        <a href="#" class="amenity-tag">Laptop Friendly</a>
+                        <a href="#" class="amenity-tag">Microwave</a>
+                        <a href="#" class="amenity-tag">Refrigerator</a>
+                        <a href="#" class="amenity-tag">Wifi</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2026. All rights reserved.</p>
+                <p class="credits">Designed by Inspiry Themes</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
